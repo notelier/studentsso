@@ -1,0 +1,14 @@
+{
+  "name": "studentsso",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "AGPL-3.0",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.1",
+    "puppeteer": "^16.1.1",
+    "sync-request": "^6.1.0"
+  }
+}

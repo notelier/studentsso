@@ -1,0 +1,13 @@
+{
+  "name": "studentsso",
+  "version": "0.1.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "sync-request": "^6.1.0"
+  },
+  "description": "Offical client for StudentSSO - Allow your students to sign in without any API keys",
+  "repository": "https://github.com/teamblobby/studentsso",
+  "author": "aboutdavid <david@blobby.me>",
+  "private": false
+}
