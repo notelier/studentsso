@@ -2,10 +2,9 @@ const { json } = require("express");
 const express = require("express");
 const fs = require("fs");
 const app = express();
-const port = 3000;
 
 app.get("/", (req, res) => {
-  res.send("Hello World!");
+  res.redirect(`https://discord.gg/3SEYN526PS`);
 });
 app.get("/api/signin/:provider", (req, res) => {
   if (!fs.existsSync(`./providers/${req.params.provider}.js`))
@@ -44,6 +43,6 @@ app.post("/api/signin/:provider", async (req, res) => {
     res.json({ success: false, error: "Provider does not exist." });
   }
 });
-app.listen(port, () => {
-  console.log(`StudentSSO ${port}`);
+const listener = app.listen(process.env.PORT || 8080, function () {
+  console.log("StudentSSO is listening on port " + listener.address().port + " :)");
 });
